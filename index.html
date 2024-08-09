@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content />
+  <meta name="keywords" content />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&amp;family=Roboto+Mono:wght@400;500;700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/mis-estilos.css">
+  <title>Portfolio Nikolay</title>
+  <script
+    nonce="2b8f2c50-f548-4d8c-9c51-84d3aaa19c77">try { (function (w, d) { !function (j, k, l, m) { j[l] = j[l] || {}; j[l].executed = []; j.zaraz = { deferred: [], listeners: [] }; j.zaraz.q = []; j.zaraz._f = function (n) { return async function () { var o = Array.prototype.slice.call(arguments); j.zaraz.q.push({ m: n, a: o }) } }; for (const p of ["track", "set", "debug"]) j.zaraz[p] = j.zaraz._f(p); j.zaraz.init = () => { var q = k.getElementsByTagName(m)[0], r = k.createElement(m), s = k.getElementsByTagName("title")[0]; s && (j[l].t = k.getElementsByTagName("title")[0].text); j[l].x = Math.random(); j[l].w = j.screen.width; j[l].h = j.screen.height; j[l].j = j.innerHeight; j[l].e = j.innerWidth; j[l].l = j.location.href; j[l].r = k.referrer; j[l].k = j.screen.colorDepth; j[l].n = k.characterSet; j[l].o = (new Date).getTimezoneOffset(); if (j.dataLayer) for (const w of Object.entries(Object.entries(dataLayer).reduce(((x, y) => ({ ...x[1], ...y[1] })), {}))) zaraz.set(w[0], w[1], { scope: "page" }); j[l].q = []; for (; j.zaraz.q.length;) { const z = j.zaraz.q.shift(); j[l].q.push(z) } r.defer = !0; for (const A of [localStorage, sessionStorage]) Object.keys(A || {}).filter((C => C.startsWith("_zaraz_"))).forEach((B => { try { j[l]["z_" + B.slice(7)] = JSON.parse(A.getItem(B)) } catch { j[l]["z_" + B.slice(7)] = A.getItem(B) } })); r.referrerPolicy = "origin"; r.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(j[l]))); q.parentNode.insertBefore(r, q) };["complete", "interactive"].includes(k.readyState) ? zaraz.init() : j.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document) } catch (e) { throw fetch("/cdn-cgi/zaraz/t"), e; };</script>
+</head>
+
+
+<body onscroll="manejarOtroScroll()" data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
+
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <!-- Barra de Navegacion Inicio -->
+
+  <!-- Barra de Navegacion Fin -->
+
+  <!-- Header Inicio -->
+  <div class="pb-0" id="home-section">
+    <nav class="barra-nav dark mb-5 site-navbar-target">
+      <div class="container">
+        <div class="site-navigation">
+          <a href="index-2.html" class="logo m-0"><img src="images/logo-nikolay-60px.png" alt=""></a>
+          <ul class="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap">
+            <li><a href="#home-section" class="nav-link active">Inicio</a></li>
+            <li><a href="#portfolio-section" class="nav-link">Mis Proyectos</a></li>
+            <li><a href="#services-section" class="nav-link">Lenguajes</a></li>
+            <li><a href="#about-section" class="nav-link">Sobre Mi</a></li>
+            <li><a href="#contact-section" class="nav-link">Contacta Conmigo</a></li>
+          </ul>
+          <a href="#"
+            class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-inline-block"
+            data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div id="large-header" class="large-header">
+      <canvas id="demo-canvas"></canvas>
+      <h1 class="main-title">Bienvenido<span class="thin"> a mi Portfolio.</span></h1>
+      <h2 class="sub-titulo">Soy <strong> Nikolay Ganev</strong>, Desarrollador Web.</h2>
+      <h2 class="sub-titulo2">Descubre mi pasión por crear experiencias digitales únicas. </h2>
+    </div>
+    <div class="wrapper container align-items-center justify-content-center mb-3">
+
+      <h2 class="opacity-0 text-black mt-5  " id="proyectos">
+        Mis proyectos
+      </h2>
+    </div>
+    <!-- Header Fin -->
+
+    <!-- Portfolio Inicio -->
+    <div class="untree_co-section untree_co-section-4 pb-0" id="portfolio-section">
+      <div class="container">
+
+        <div class="relative">
+          <div class="loader-portfolio-wrap">
+            <div class="loader-portfolio"></div>
+          </div>
+        </div>
+        <div id="portfolio-single-holder"></div>
+        <div class="portfolio-wrapper">
+
+
+          <div id="posts" class="row">
+
+            <!-- Proyecto 1 -->
+            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+              <a href="portfolio-single-2.html" class="portfolio-item gsap-reveal-img"
+                data-id="1">
+                <div class="overlay">
+                  <span class="wrap-icon icon-link2"></span>
+                  <div class="portfolio-item-content">
+                    <h3 class="mb-3">CocinaMasala</h3>
+                    <p>Blog de cocina india</p>
+                  </div>
+                </div>
+                <img src="images/Proyecto nuevo.jpg" class="lazyload img-fluid" alt="Images" />
+              </a>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+              <a href="portfolio-single-4.html" class="portfolio-item gsap-reveal-img"
+                data-id="2">
+                <div class="overlay">
+                  <span class="wrap-icon icon-link2"></span>
+                  <div class="portfolio-item-content">
+                    <h3 class="mb-3">Rock & EDM Festival</h3>
+                    <p>Web de Festival</p>
+                  </div>
+                </div>
+                <img src="images/responsive.jpg" class="lazyload  img-fluid" alt="Images" />
+              </a>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+              <a href="portfolio-single-5.html" class="portfolio-item gsap-reveal-img"
+                data-id="3">
+                <div class="overlay">
+                  <span class="wrap-icon icon-link2"></span>
+                  <div class="portfolio-item-content">
+                    <h3 class="mb-3">Configurador Tesla</h3>
+                    <p>Ejercicio Formulario</p>
+                  </div>
+                </div>
+                <img src="images/Image0001.jpg" class="lazyload  img-fluid" alt="Images" />
+              </a>
+            </div>
+            <!-- Proyecto 4 -->
+            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+              <a href="portfolio-single-3.html" class="portfolio-item gsap-reveal-img"
+                >
+                <div class="overlay">
+                  <span class="wrap-icon icon-link2"></span>
+                  <div class="portfolio-item-content">
+                    <h3 class="mb-3">Peuvec.es</h3>
+                    <p>Web WordPress Elementor</p>
+                  </div>
+                </div>
+                <img src="images/peuvecmock.jpg" class="lazyload  img-fluid" alt="Images" />
+              </a>
+            </div>
+            <!-- Proyecto 5 -->
+            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+              <a href="portfolio-single-1.html" class="portfolio-item gsap-reveal-img"
+                data-id="5">
+                <div class="overlay">
+                  <span class="wrap-icon icon-link2"></span>
+                  <div class="portfolio-item-content">
+                    <h3 class="mb-3">Marcave.es</h3>
+                    <p>Web WordPress Elementor</p>
+                  </div>
+                </div>
+                <img src="images/MockupMarcave.jpg" class="lazyload  img-fluid" alt="Images" />
+              </a>
+            </div>
+            <!-- Proyecto 6 -->
+            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+              <a href="portfolio-single-6.html" class="portfolio-item gsap-reveal-img"
+                data-id="6">
+                <div class="overlay">
+                  <span class="wrap-icon icon-link2"></span>
+                  <div class="portfolio-item-content">
+                    <h3>Vinery</h3>
+                    <p>Proyecto ecommerce WordPress</p>
+                  </div>
+                </div>
+                <img src="images/vineryMock.jpg" class="lazyload  img-fluid" alt="Images" />
+              </a>
+            </div>
+            <!-- Proyecto 7 -->
+            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+              <a href="portfolio-single-7.html" class="portfolio-item gsap-reveal-img"
+                data-id="6">
+                <div class="overlay">
+                  <span class="wrap-icon icon-link2"></span>
+                  <div class="portfolio-item-content">
+                    <h3>App del tiempo</h3>
+                    <p>Aplicacion del tiempo usando API OpenWeather</p>
+                  </div>
+                </div>
+                <img src="images/mocktiempo.jpg" class="lazyload  img-fluid" alt="Images" />
+              </a>
+            </div>
+            <!-- Proyecto 8 -->
+            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+              <a href="portfolio-single-8.html" class="portfolio-item gsap-reveal-img"
+                data-id="6">
+                <div class="overlay">
+                  <span class="wrap-icon icon-link2"></span>
+                  <div class="portfolio-item-content">
+                    <h3>Simulador Tragaperras</h3>
+                    <p>Simulador tragaperras con JavaScript</p>
+                  </div>
+                </div>
+                <img src="images/tragaperrasmock.jpg" class="lazyload  img-fluid" alt="Images" />
+              </a>
+            </div>
+            <!-- Proyecto 9 -->
+            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+              <a href="portfolio-single-9.html" class="portfolio-item gsap-reveal-img"
+                data-id="6">
+                <div class="overlay">
+                  <span class="wrap-icon icon-link2"></span>
+                  <div class="portfolio-item-content">
+                    <h3>Conversor de Divisas</h3>
+                    <p>Conversor de divisas con API</p>
+                  </div>
+                </div>
+                <img src="images/conversormock.jpg" class="lazyload  img-fluid" alt="Images" />
+              </a>
+            </div>
+            <!-- Proyecto 10 -->
+            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+              <a href="portfolio-single-10.html" class="portfolio-item gsap-reveal-img"
+                data-id="6">
+                <div class="overlay">
+                  <span class="wrap-icon icon-link2"></span>
+                  <div class="portfolio-item-content">
+                    <h3>Clon de Airbnb</h3>
+                    <p>Pagina principal clonada de Airbnb</p>
+                  </div>
+                </div>
+                <img src="images/aibnbmock.jpg" class="lazyload  img-fluid" alt="Images" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Portfolio Fin -->
+    <!-- Seccion Habilidades Inicio-->
+    <div class="untree_co-section pb-0" id="services-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="wrapper container align-items-center justify-content-center mb-3">
+
+            <h2 class="opacity-0 text-black " id="lenguajes">
+              Tecnologías de Desarrollo
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class=" mb-3">
+                <span class="icono-html"> <img src="images/icons8-html-48.png" alt="icono html"></span>
+              </div>
+              <h3 class="">HTML 5</h3>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="mb-3">
+                <span class="icono-css3"><img src="images/icons8-css3-48.png" alt="icono css3"></span>
+              </div>
+              <h3 class="">CSS 3</h3>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="mb-3">
+                <span class="icono-js"><img src="images/icons8-javascript-48.png" alt="icono javascript"></span>
+              </div>
+              <h3 class="">JavaScript</h3>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="mb-3">
+                <span class="icono-bootstrap"> <img src="images/icono-bootstrap.png" alt="icono bootstrap"></span>
+              </div>
+              <h3 class="">Bootstrap</h3>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="mb-3">
+                <span class="icono-wordpress"><img src="images/icons8-wordpress-48.png" alt="icono wordpress"></span>
+              </div>
+              <h3 class="">Wordpress</h3>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="mb-3">
+                <span class="icono-php"><img src="images/icons8-php-48.png" alt="icono php"></span>
+              </div>
+              <h3 class="">PHP</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Seccion Servicio Fin-->
+
+    <!-- Sobre Mi Inicio -->
+    <div class="untree_co-section pb-0" id="about-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-12 text-left">
+            <div class="wrapper container mb-3">
+
+              <h2 class="opacity-0 text-black" id="sobre-mi">
+                Sobre Mi
+              </h2>
+            </div>
+
+            <p class="text-center"> Soy Nikolay, un apasionado desarrollador web especializado en HTML, CSS y JavaScript.
+              Transformo ideas en experiencias digitales excepcionales, combinando funcionalidad y diseño estético.</p>
+            <div class="text-center wave">
+              <svg>
+                <path d="M10,10 L50,100 L90,50"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="person">
+              <div class="container1">
+                <div class="container-inner">
+                  <img class="circle1" />
+                  <img class="img img1" src="images/DSC_2778.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 pl-md-5">
+            <h3 class="text-black h5 font-weight-bold mb-3 ">Bio</h3>
+            <p class="">Con una trayectoria que abarca las telecomunicaciones, la electrónica y la informática, he estado inmerso en el desafío constante de solucionar incidencias y enfrentar nuevos retos. Desde el diseño de circuitos hasta la resolución de problemas en redes complejas, he explorado diversos campos con pasión y determinación. Ahora, con la programación en mi horizonte, veo una oportunidad emocionante para fusionar mis habilidades previas con un nuevo conjunto de herramientas. Estoy listo para abrir un nuevo capítulo en mi carrera y explorar todas las posibilidades que el mundo tech tiene para ofrecer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Sobre Mi Fin -->
+
+  <!-- Habilidades Blandas Inicio -->
+
+  <div class="untree_co-section pb-0">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="wrapper container mb-3">
+
+          <h2 class="opacity-0 text-black " id="soft-skills">
+            Soft Skills
+          </h2>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="0">
+          <div class="progressbar" data-animate="false">
+            <div class="circle" data-percent="98">
+              <div class="number"></div>
+              <p class="caption">Trabajo en Equipo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="progressbar" data-animate="false">
+            <div class="circle" data-percent="95">
+              <div class="number"></div>
+              <p class="caption">Resolución de Problemas</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="progressbar" data-animate="false">
+            <div class="circle" data-percent="96">
+              <div class="number"></div>
+              <p class="caption">Creatividad e Innovación</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="progressbar" data-animate="false">
+            <div class="circle" data-percent="93">
+              <div class="number"></div>
+              <p class="caption">Gestión del Tiempo y Organización</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Habilidades Blandas Fin -->
+
+
+  <!-- Contacto Inicio-->
+  <div class="untree_co-section" id="contact-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="wrapper container align-items-center justify-content-center mb-3">
+
+          <h2 class="opacity-0 text-black " id="contacto">
+            Contacto
+          </h2>
+
+        </div>
+      </div>
+      <div class="row">
+<!--
+        <div class="col-lg-4 text-center">
+
+          <div class="mb-4">
+            <img src="images/phone-svgrepo-com.svg" alt="telefono" height="100px">
+          </div>
+
+          <div>
+            <p class="text-black text-lg" >+34635596973 </p>
+          </div> -->
+
+          <!-- Formulario preparado para php -->
+          <!-- <form action="mail-cifrado-nikolay.php" method="post">
+            <div class="row">
+              <div class="col-lg-6 form-group">
+                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre">
+              </div>
+              <div class="col-lg-6 form-group">
+                <input type="text" id="apellidos" name="apellidos" class="form-control" placeholder="Apellidos">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 form-group">
+                <select class="form-control">
+                  <option value="">Motivo de contacto</option>
+                  <option value="colaboracion">Colaboración</option>
+                  <option value="contratacion">Contratación</option>
+                  <option value="informacion">Información</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 form-group">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 form-group">
+                <textarea name="mensaje" id="mensaje" rows="7" class="form-control" placeholder="Escribe tu mensaje"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 form-group">
+                <input type="submit" class="btn btn-primary " value="Enviar">
+              </div>
+            </div>
+          </form> -->
+          <!-- formulario netlify -->
+           <div class="col-lg-12">
+          <form name="contacto" data-netlify="true" method="POST">
+            <div class="row">
+              <div class="col-lg-6 form-group">
+                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre">
+              </div>
+              <div class="col-lg-6 form-group">
+                <input type="text" id="apellidos" name="apellidos" class="form-control" placeholder="Apellidos">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 form-group">
+                <select class="form-control" name="motivo[]" >
+                  <option value="">Motivo de contacto</option>
+                  <option value="colaboracion">Colaboración</option>
+                  <option value="contratacion">Contratación</option>
+                  <option value="informacion">Información</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 form-group">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 form-group">
+                <textarea name="mensaje" id="mensaje" rows="7" class="form-control" placeholder="Escribe tu mensaje"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 form-group">
+                <input type="submit" class="btn btn-primary " value="Enviar">
+              </div>
+            </div>
+          </form>
+          </div>
+        </div>
+
+     <!--    <div class="col-lg-4 text-center">
+          <div class="mb-4">
+          <img src="images/mail-svgrepo-com.svg" alt="telefono" height="100px">
+          </div>
+
+          <div>
+          <p class="text-black text-lg" > nikoakay47@gmail.com</p>
+          </div>
+
+        </div>
+        <div class="col-lg-4 text-center boton-contacto">
+          <a href="https://www.linkedin.com/in/nikolay-nikolaev-ganev-3b4667242" target="_blank"><img src="images/linkedin-svgrepo-com.svg" alt="telefono" height="100px"></a>
+
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+</div>
+  <!-- Contacto Fin -->
+  <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="widget">
+            <h3>Home</h3>
+            <ul class="list-unstyled float-left links">
+              <li><a href="#">Sobre Mi</a></li>
+              <li><a href="#">Proyectos</a></li>
+              <li><a href="#">Lenguajes</a></li>
+              <li><a href="#">Terminos</a></li>
+              <li><a href="#">Privacidad</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="widget">
+            <h3>Proyectos</h3>
+            <ul class="list-unstyled float-left links">
+              <li><a href="#">HTML5</a></li>
+              <li><a href="#">CSS3</a></li>
+              <li><a href="#">JS</a></li>
+              <li><a href="#">Bootstrap</a></li>
+              <li><a href="#">WordPress</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="widget">
+            <h3>Lenguajes</h3>
+            <ul class="list-unstyled float-left links">
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS3</a></li>
+              <li><a href="#">JS</a></li>
+              <li><a href="#">Bootstrap</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">WordPress</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="widget">
+            <h3>Connect</h3>
+            <ul class="list-unstyled social">
+              <li><a href="https://www.linkedin.com/in/nikolay-nikolaev-ganev-3b4667242/"><span class="icon-linkedin"></span></a></li>
+              <li><a href="https://github.com/NNikolaevG"><span class="icon-github"></span></a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <p>
+
+            Copyright &copy;
+            <script data-cfasync="false"
+              src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+            <script>document.write(new Date().getFullYear());</script>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/wave-animate.js"></script>
+  <script src="js/circle-progress.js"></script>
+  <script src="js/imagesloaded.pkgd.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/ScrollMagic.min.js"></script>
+  <script src="js/scrollmagic.animation.gsap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/animacion-texto.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+  </script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+    integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+    data-cf-beacon='{"rayId":"859e5a2808192192","b":1,"version":"2024.2.1","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
