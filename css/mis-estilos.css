@@ -547,6 +547,10 @@ h4,
 }
 
 @media only screen and (max-width : 768px) {
+
+  
+
+
   .demo-1 .main-title {
     font-size: 3em;
   }
@@ -592,6 +596,31 @@ h4,
   
 
   }
+}
+
+@media only screen and (max-width: 479px) {
+  /* Estilos para dispositivos móviles en vertical */
+  body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+  }
+
+  .large-header .sub-titulo2{
+    font-size: 18px;
+    text-wrap: balance;
+   }
+
 }
 
 .site-mobile-menu {
@@ -2017,6 +2046,9 @@ figure.dotted-bg:before {
 }
 
 @media (max-width: 767.98px) {
+
+
+
   .owl-single .owl-nav {
     display: none;
   }
