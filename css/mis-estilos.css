@@ -623,6 +623,31 @@ h4,
 
 }
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* Estilos para dispositivos móviles en horizontal */
+
+  body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+  }
+
+  .large-header .sub-titulo2{
+    font-size: 18px;
+    text-wrap: balance;
+   }
+}
+
 .site-mobile-menu {
   width: 300px;
   position: fixed;
