@@ -496,6 +496,48 @@
           </div>
         </div>
 
+
+        <div class="col-lg-12">
+        <form name="contacto" data-netlify="true" method="POST">
+          <input type="hidden" name="form-name" value="contacto">
+          <div class="row">
+            <div class="col-lg-6 form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" class="form-control" required>
+          </div>
+          <div class="col-lg-6 form-group">
+              <label for="apellidos" >Apellidos:</label>
+              <input class="form-control" type="text" id="apellidos" name="apellidos" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 form-group">
+              <select class="form-control" id="motivo" name="motivo" required>
+                  <option value="">Motivo de contacto</option>
+                  <option value="colaboracion">Colaboración</option>
+                  <option value="contratacion">Contratación</option>
+                  <option value="informacion">Información</option>
+              </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 form-group">
+              <label for="email">Email:</label>
+              <input class="form-control" type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 form-group">
+              <label for="mensaje">Mensaje:</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+          </div>
+          <div>
+              <button class="btn btn-primary " type="submit">Enviar</button>
+          </div>
+      </form>
+      </div>
+
      <!--    <div class="col-lg-4 text-center">
           <div class="mb-4">
           <img src="images/mail-svgrepo-com.svg" alt="telefono" height="100px">
